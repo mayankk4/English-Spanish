@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://EnglishSpanishDictionary" version="1.0.0" viewmodes="windowed fullscreen" width="200">
+    
+    <name short="EnglishSpanishDictionary">EnglishSpanishDictionary</name>    
+
+    <description>
+       An Off-line dictionary from English-Spanish with Auto-complete.
+    </description>
+  
+    <author email="mayankk4@gmail.com" href="http://www.roomforcreativity.wordpress.com">
+        Mayank Kandpal
+    </author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>
+	   Copyright Mayank Kandpal, 2013.
+    </license>
+    
+   	<feature name="nokia://s40.nokia.com/SAWRT/2.3" required="true" />
+</widget>

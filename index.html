@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>English-Spanish</title>
+    <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/s40-theme_text_field.css" />	
+    <link rel="stylesheet" type="text/css" href="s40-theme/css/app.css" />	
+
+	<script src="s40-theme/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="s40-theme/js/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+	<script src="s40-theme/js/yui-min.js" type="text/javascript"></script>
+	<script src="s40-theme/js/trie.js" type="text/javascript"></script>
+	<script src="s40-theme/js/dict.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+       window.onload=function(){
+       		jQuery('.ui-loader').hide();
+	  	}
+		function refreshPageContent() {
+			jQuery('#input').val('');
+		}
+	</script>
+
+</head>
+                    
+<body>
+    <div data-role="page" id='page1' style='background-color:white!important;' class="ui-page">
+        <!-- header -->
+        <div class="ui-header">
+             <div class="ui-title inline"><h2>English-Spanish</h2></div><div class="refresh-icon inline"><a onclick="refreshPageContent();"><img alt="icon" src="s40-theme/images/refresh_40x40.png"/></a></div>
+        </div>
+
+        <div data-role="content" role="main" class="ui-content">
+			<!-- Dictionary code starts here -->
+			<!-- text-field -->			
+			<div class="ui-fieldset_S40textfield">
+			   <input type="text" id="input" placeholder="Enter an english word ..." class="ui-text-input_S40textfield"/>
+			</div>
+            <ul data-role="listview" data-dividertheme="a" id="words_list"></ul>
+            <div class='overlay'></div>
+		</div>
+
+    </div>    
+</body>
+</html>
